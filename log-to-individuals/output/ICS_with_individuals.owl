@@ -1,0 +1,221 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationArtifact"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationDisseminationAgent">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Endorsement"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#FlowManipulatorAgent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#BasicAgent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#ReceiveIP">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#AgentAction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Amplification"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#SelfIdentified">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#DefinedGroup"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#DefinedGroup">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#SpokespersonAgent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Topic"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#LivePlayerAgent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#SendIP">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#AgentAction"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Reading">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationArtifact"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#PhysicalEventAgent">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#APrioriGroup">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#DefinedGroup"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#CognitiveCluster">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#TransformedInformationPacket">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#eliminatesInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationDisseminationAgent"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#FlowManipulatorAgent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#sendsInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasEndorsement">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Endorsement"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasStance">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#eliminatesAgent">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationDisseminationAgent"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#FlowManipulatorAgent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasTriad">
+    <rdfs:comment>Review</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#receivesInformationPacket"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#ignoresInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasInformationArtifact">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationArtifact"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasGroup">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasGroupAffiliation">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#amplifiesInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#containsTriad">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#endorsesInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#subscribesTo">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationDisseminationAgent"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#BasicAgent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#createsInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#PhysicalEventAgent"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationDisseminationAgent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#redirectsInformationPacket">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#FlowManipulatorAgent"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasTopic">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Topic"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#hasAmplification">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Amplification"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#InformationPacket"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#trust_score">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#outbound_trust_score_threshold">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#joinable">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#triad_stack">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#inbound_trust_score_threshold">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#identity_signature">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#group_prestige">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Group"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#stance">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#geolocation">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#PhysicalEventAgent"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#BasicAgent"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#triad_closeness_threshold">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Triad"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#outbound_trust_score">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#trust_score"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#inbound_trust_score">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#trust_score"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#id">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#information_packets_per_clock_tick">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS#Agent"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+  </owl:DatatypeProperty>
+  <BasicAgent rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/3">
+    <stance>0</stance>
+  </BasicAgent>
+  <InformationDisseminationAgent rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/101">
+    <receivesInformationPacket>
+      <InformationPacket rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/IP-1"/>
+    </receivesInformationPacket>
+    <stance>-3</stance>
+  </InformationDisseminationAgent>
+  <BasicAgent rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/1">
+    <stance>0</stance>
+  </BasicAgent>
+  <InformationDisseminationAgent rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/102">
+    <receivesInformationPacket>
+      <InformationPacket rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/IP-2"/>
+    </receivesInformationPacket>
+    <sendsInformationPacket rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/IP-2"/>
+    <stance>3</stance>
+  </InformationDisseminationAgent>
+  <BasicAgent rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/2">
+    <receivesInformationPacket rdf:resource="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/IP-2"/>
+    <stance>3</stance>
+  </BasicAgent>
+  <InformationDisseminationAgent rdf:about="http://www.semanticweb.org/pmtucker/ontologies/2022/4/ICS/111">
+    <stance>0</stance>
+  </InformationDisseminationAgent>
+</rdf:RDF>
